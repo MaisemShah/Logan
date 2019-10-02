@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+    <style>
+            body {
+                background-size: cover;
+                font-family: Arial;
+                color: white;
+                background-color: red;
+            }
+    </style>
+<section class="text-center">
+    <h1 class="display-1">The King (Wolverine)</h1>
+    <p class="text-lowercase">The Claws of the King!!!</p>
+</section>
+<section>
+    <section class="row" text-center>
+        <aside class="col-lg-4 col-md-4 col-sm-12">
+            <img style="height:22rem; width: 22rem" src="https://media1.giphy.com/media/yVYf4Eo8JyyIg/giphy.gif" alt="uhhhhh" />
+        </aside>
+        <aside class="col-lg-4 col-md-4 col-sm-12">
+            <img style="height:22rem; width: 22rem" src="https://steemitimages.com/0x0/https://steemitimages.com/DQmVRA1ZLiwm4mnvkHDb6E5Hp7qEHB32MZ8hFKxuY3cC9RH/yaaaas.gif" alt="runnn" />
+        </aside>
+        <aside class="col-lg-4 col-md-4 col-sm-12" >
+            <img style="height:22rem; width: 22rem" src="https://i.pinimg.com/originals/c1/c3/38/c1c3382619c9843c3554f2deb509c94a.gif" alt="RUn it" />
+        </aside>
+    </section>
+    <section class="row" center-align>
+        @foreach (string name in Model.Logan)
+        {
+            <aside class="col-lg-3 col-md-3 col-sm-12">
+                <p style="background-color:darkred;">@name</p>
+            </aside>
+        }
+    </section>
